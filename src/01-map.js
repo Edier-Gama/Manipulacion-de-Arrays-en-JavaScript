@@ -1,5 +1,5 @@
 // Map es un método que nos permite copiar los elementos de un array en 
-// otro array sin extendernos son ciclos for
+// otro array sin extendernos son ciclos for, y tambien nos permite extraer datos de arrays
 
 const letters = ['a', 'b', 'c']
 
@@ -25,6 +25,13 @@ array = [
     },
 
 ]
+
+// map tambien nos permite extraer datos de arrays
+
+precios = array.map(precio => precio.price)
+console.log(precios);
+
+// También nos permite copiar objetos sin shallow copy
 
 
 function solution(array) {

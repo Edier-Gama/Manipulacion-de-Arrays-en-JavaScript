@@ -36,5 +36,6 @@ array = [
 
 ]
 
-rta3 = array.some(item => item.stock < 20)
+let rta3 = array.some(item => item.stock < 20)
 console.log(rta3);
+
