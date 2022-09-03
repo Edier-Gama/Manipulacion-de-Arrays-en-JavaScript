@@ -2,7 +2,7 @@
 mediante algun separador y nos lo duevuelve en forma de string*/
 
 const nombre = ['Edier', 'Santiago', 'Gama', 'Cusguen']
-const nombreString = nombre.join('-')
+const nombreString = nombre.join('-').toLowerCase
 console.log(nombreString);
 
 // Edier-Santiago-Gama-Cusguen
@@ -19,3 +19,11 @@ const nombreArray = nombreString.split('-')
 console.log(nombreArray);
 
 //[ 'Edier', 'Santiago', 'Gama', 'Cusguen' ]
+
+
+function solution(title) {
+    const urltitle =  title.split(' ').join('-').toLowerCase()
+    console.log(urltitle)
+}; 
+
+solution("La forma de correr Python");
